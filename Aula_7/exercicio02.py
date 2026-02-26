@@ -1,4 +1,4 @@
-# Pedindo dados do aluno
+#  dados do aluno
 nome = input("Digite o nome do aluno: ")
 
 nota1 = float(input("Digite a nota 1: "))
@@ -17,12 +17,12 @@ aluno = {
     "nota5": nota5
 }
 
-# Calculando a média
+
 media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
 
-# Mostrando resultados
-print("\nDados do aluno:")
+
+print("Dados do aluno:")
 print(aluno)
 
-print(f"\nMédia do aluno: {media:.2f}")
+print(f"Média do aluno: {media:.2f}")
 

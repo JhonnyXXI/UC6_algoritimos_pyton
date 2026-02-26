@@ -12,5 +12,5 @@ dados_usario = {
 print("dicionario criado :")
 print(dados_usario)
 
-for chave, valor in dados_usario():
-    print(chave, ":", valor)
+ 
+ 

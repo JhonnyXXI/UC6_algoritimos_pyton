@@ -67,3 +67,4 @@ for valor in aluno.values():
 # Pecorrer um dicionario e retonar chave e valor 
 for chave, valor in aluno.items():
     print(chave, ":", valor)
+    
