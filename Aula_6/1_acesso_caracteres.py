@@ -4,6 +4,6 @@
 
 
 palavra = input("palavra: ")
-num = int(input("numero caractere: "))
+num = int(input("numero caractere: ")) 
 
 print(palavra[num - 1])
