@@ -11,9 +11,8 @@ print("3 - Lista de personagens")
 
 opcao = input("Escolha uma opção: ")
 
-# ---------------------------------
 # OPÇÃO 1 - CONSULTAR POR ID
-# ---------------------------------
+
 if opcao == "1":
 
     id = int(input("Digite o ID do personagem: "))
@@ -35,9 +34,8 @@ if opcao == "1":
     print("Imagem:", dados["image"])
 
 
-# ---------------------------------
 # OPÇÃO 2 - CONSULTAR POR NOME
-# ---------------------------------
+
 elif opcao == "2":
 
     nome = input("Digite o nome do personagem: ")
@@ -63,9 +61,8 @@ elif opcao == "2":
             print("----------------------------")
 
 
-# ---------------------------------
 # OPÇÃO 3 - LISTAR PERSONAGENS
-# ---------------------------------
+
 elif opcao == "3":
 
     resposta = requests.get(url)
