@@ -11,7 +11,7 @@ dados = {
 }
 
 # DataFrame é a criacao de um excel no formato que o pandas entende para trbalhar com os dados
-# excel = pd.DataFrame(dados)
+excel = pd.DataFrame(dados)
 
 # to_excel() > serve criar uma nova planilha, pegar os dados digitados pelo usuario em formato DataFrame e gravar os dados na planilha criada
 
