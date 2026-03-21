@@ -14,7 +14,21 @@ cursor = conexao.cursor(pymysql.cursors.DictCursor)
 cursor.execute("SELECT * FROM clientes")
 todos = cursor.fetchall()
 
-for cliente in todos:
-    print(cliente["nome"], cliente["email"])
+# for cliente in todos:
+#     print(cliente["nome"],",", cliente["email"],",",cliente["telefone"])
 
-    print(todos)
+# --- Buscar um unico registro por ID ---
+
+cursor.execute("SELECT * FROM clientes WHERE id_cliente = 1")
+
+cliente = cursor.fetchone()
+print(cliente) # {'id':1. 'nome': "Maria', 'email': '...'}
+
+# --- Buscar com filtro dinâmico ---
+
+nome_busca = "Ursula%"
+cursor.execute("SELECT * FROM clientes WHERE nome  LIKE%s",(nome_busca),)
+
+resultado = cursor.fetchall()
+
+print(resultado)
